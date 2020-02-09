@@ -4,6 +4,7 @@ import logging
 
 from homeassistant.components.binary_sensor import DOMAIN as BINARY_SENSOR
 from homeassistant.components.cover import DOMAIN as COVER
+from homeassistant.components.climate import DOMAIN as CLIMATE
 from homeassistant.components.device_tracker import DOMAIN as DEVICE_TRACKER
 from homeassistant.components.fan import DOMAIN as FAN
 from homeassistant.components.light import DOMAIN as LIGHT
@@ -65,6 +66,7 @@ CHANNEL_ON_OFF = "on_off"
 CHANNEL_POWER_CONFIGURATION = "power"
 CHANNEL_PRESSURE = "pressure"
 CHANNEL_SMARTENERGY_METERING = "smartenergy_metering"
+CHANNEL_THERMOSTAT = "thermostat"
 CHANNEL_TEMPERATURE = "temperature"
 CHANNEL_ZDO = "zdo"
 CHANNEL_ZONE = ZONE = "ias_zone"
@@ -75,7 +77,7 @@ CLUSTER_COMMANDS_SERVER = "server_commands"
 CLUSTER_TYPE_IN = "in"
 CLUSTER_TYPE_OUT = "out"
 
-COMPONENTS = (BINARY_SENSOR, COVER, DEVICE_TRACKER, FAN, LIGHT, LOCK, SENSOR, SWITCH)
+COMPONENTS = (BINARY_SENSOR, COVER, CLIMATE, DEVICE_TRACKER, FAN, LIGHT, LOCK, SENSOR, SWITCH)
 
 CONF_BAUDRATE = "baudrate"
 CONF_DATABASE = "database_path"
@@ -197,6 +199,7 @@ SIGNAL_AVAILABLE = "available"
 SIGNAL_MOVE_LEVEL = "move_level"
 SIGNAL_REMOVE = "remove"
 SIGNAL_SET_LEVEL = "set_level"
+SIGNAL_SET_FAN = "set_fan"
 SIGNAL_STATE_ATTR = "update_state_attribute"
 
 UNKNOWN = "unknown"
